@@ -1,8 +1,8 @@
 export default function Header(props) {
-  const { user } = props.userStuff;
+  const { user: {firstName, lastName} } = props.userStuff;
   return (
     <header>
-      {`${user.firstName} ${user.lastName}`}
+      {`${firstName} ${lastName}`}
     </header>
   );
 }

@@ -1,8 +1,10 @@
-export default function Main(props) {
-  const avatar = props.avatar;
+function Main(props) {
+  const { avatar: {image, alt} } = props;
   return (
     <main>
-      <img src={avatar.image} alt={avatar.alt} />
+      <img src={image} alt={alt} />
     </main>
   );
 }
+
+export default Main;
